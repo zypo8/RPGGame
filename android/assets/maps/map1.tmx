@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.2" tiledversion="1.3.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="50" height="50" tilewidth="32" tileheight="32" infinite="0" nextlayerid="4" nextobjectid="1">
+ <tileset firstgid="1" name="terrain" tilewidth="32" tileheight="32" tilecount="1024" columns="32">
+  <image source="../img/terrain.png" width="1024" height="1024"/>
+  <tile id="14">
+   <properties>
+    <property name="collision" value=""/>
+   </properties>
+  </tile>
+  <tile id="15">
+   <properties>
+    <property name="collision" value=""/>
+   </properties>
+  </tile>
+  <tile id="46">
+   <properties>
+    <property name="collision" value=""/>
+   </properties>
+  </tile>
+  <tile id="47">
+   <properties>
+    <property name="collision" value=""/>
+   </properties>
+  </tile>
+  <tile id="322">
+   <properties>
+    <property name="door" value=""/>
+   </properties>
+  </tile>
+  <tile id="323">
+   <properties>
+    <property name="door" value=""/>
+   </properties>
+  </tile>
+  <tile id="332">
+   <properties>
+    <property name="grass" value=""/>
+   </properties>
+  </tile>
+  <tile id="333">
+   <properties>
+    <property name="grass" value=""/>
+   </properties>
+  </tile>
+  <tile id="354">
+   <properties>
+    <property name="door" value=""/>
+   </properties>
+  </tile>
+  <tile id="355">
+   <properties>
+    <property name="door" value=""/>
+   </properties>
+  </tile>
+  <tile id="364">
+   <properties>
+    <property name="grass" value=""/>
+   </properties>
+  </tile>
+  <tile id="365">
+   <properties>
+    <property name="grass" value=""/>
+   </properties>
+  </tile>
+  <tile id="386">
+   <properties>
+    <property name="door" value=""/>
+   </properties>
+  </tile>
+  <tile id="387">
+   <properties>
+    <property name="door" value=""/>
+   </properties>
+  </tile>
+  <tile id="418">
+   <properties>
+    <property name="door" value=""/>
+   </properties>
+  </tile>
+  <tile id="419">
+   <properties>
+    <property name="door" value=""/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer id="1" name="Tile Layer 1" width="50" height="50">
+  <data encoding="base64" compression="zlib">
+   eAHtmVtOwzAURA18l3YXfJV0I7ATugceG+GxJ5bCL3ckjmpZTmLfOCVS8zG6SXwfMxk7RWIbQtgZthVRuXNAPGoB785qD4ahSC55ym0J9Vc/9a8FdeqxMwxFcu8sbw6ofymkM+YAbzjmonLIi2uXdA1veOaicshbEveYC7zhGUfWiHHdnNeal8PQzM5qtNfgGsd0bahPyzVxeL4J4cVA1LOhGfCGsyLPFLke6tF6TTPfTcOHgahnQ3M6W0/9gLvWhLT+4SqEqXi0Hmlf7jUfH4h6xnoual3fW/GNr9PvGrXi/9QAxxEd8uHVct4M8mVMh/jjB9dwzkVpEAdB71TgPhdzvlGnmJshzsKnrX8ZuM/l8kw5+NHnAblEtMR8aq+Pf/rpOTV2kR/SU9IPHXDxRHqUzCvJ8fjBXhEXgfvSSJ30l3AsyfH6IS7wgFdNpLaEY0mOx4+SvufO8fhxbo4l81Y/2p3Rkvc9luPxY2Pf59sKwGGsjjxP9JwP+NyblhLAaz+ST54nTvHDMy9Xg77cWumzKX6UzhjLa6Fj9aPd92r14/Qu1/Nxehdj53hsvcW+Wv1Y/Uj3WYt9tf5+LGtfXaofm+jv9XSfe+//43ygQ3+ve3mndS101P5+SAdaUj7e+xY6as/HUnVcqh/aA0vcV7V+6AwsUUft+UAH56RF3Nu7mfr98/ihua0xRQdepP//+L4OIYX3mzp3nTTghf5/gybN/TEdKebm4+0vDejo8wNteOOdNWcdGohw1ky8YI37Ofl4e8NRXqR+0FPaaqA+1J4rouPwp6OGr2pBTd2U3L53pJ7igg5d10B1NflTcrc2qw/0FR/hF9e/mHw=
+  </data>
+ </layer>
+</map>
