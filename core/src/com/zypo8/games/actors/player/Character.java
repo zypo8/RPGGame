@@ -8,7 +8,7 @@ import com.zypo8.games.actors.Interactable;
 import com.zypo8.games.ui.HUDStage;
 
 public class Character extends Interactable {
-    public static boolean moving;
+    public boolean moving;
 
     //Walking animation
     protected float elapsedTime;

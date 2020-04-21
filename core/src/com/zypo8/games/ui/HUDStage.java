@@ -29,7 +29,6 @@ public class HUDStage extends Stage implements InputProcessor {
     public boolean touchDown(int screenX, int screenY, int pointer, int button) {
         super.touchDown(screenX, screenY, pointer, button);
         coord = screenToStageCoordinates(new Vector2((float)screenX, (float)screenY));
-
         try {
             hitActor = (com.zypo8.games.items.InventorySlot) hit(coord.x, coord.y, true);
         }
@@ -41,7 +40,8 @@ public class HUDStage extends Stage implements InputProcessor {
             return false;
         }
         if(hitActor != null){
-            if (hitActor.getClass().getName().substring(0, 23).equals("com.zypo8.games.items")) {
+            System.out.println(hitActor.getClass().getName());
+            if (hitActor.getClass().getName().substring(0, 21).equals("com.zypo8.games.items")) {
                 if (window != null) {
                     window.remove();
                     lastClickedSlot.getItem().selected = false;
@@ -51,8 +51,8 @@ public class HUDStage extends Stage implements InputProcessor {
                 if(hitActor.getItem() != null) {
                     if(button == 0){hitActor.getItem().firstOption();}
                     else if(button == 1) {
-                        if(hitActor.getItem().getClass().getName().length() == 38 &&
-                                hitActor.getItem().getClass().getName().substring(0, 38).equals("com.zypo8.games.abilities.buffs.Buff")) {
+                        if(hitActor.getItem().getClass().getName().length() == 36 &&
+                                hitActor.getItem().getClass().getName().substring(0, 36).equals("com.zypo8.games.abilities.buffs.Buff")) {
                             if(hitActor.getItem() != null) {
                                 hitActor.getItem().itemInteractWindow(window, com.zypo8.games.ui.Tools.getSkin());
 
@@ -79,7 +79,9 @@ public class HUDStage extends Stage implements InputProcessor {
 //                        addActor(window);
                     }
                 }
-
+                else {
+                    return false;
+                }
             }
         }
         else {
@@ -106,7 +108,7 @@ public class HUDStage extends Stage implements InputProcessor {
         if(hitActor != null){
             if (itemDescriptionWIndow != null)
                 itemDescriptionWIndow.remove();
-            if (hitActor.getClass().getName().substring(0, 23).equals("com.zypo8.games.items")) {
+            if (hitActor.getClass().getName().substring(0, 21).equals("com.zypo8.games.items")) {
                 //Gdx.app.log("Hover ", hitActor.getName());
                 if(hitActor.getItem() != null) {
                     itemDescriptionWIndow = new com.zypo8.games.ui.windows.ItemDescriptionWIndow(hitActor.getItem().getName(), com.zypo8.games.ui.Tools.getSkin(), hitActor.getItem().getItemRarity().getColor());

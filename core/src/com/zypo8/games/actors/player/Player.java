@@ -12,13 +12,13 @@ import com.zypo8.games.ui.windows.TalentsWindow;
 import com.zypo8.games.Screens.StageGameScreen;
 
 public class Player extends Character{
-    private com.zypo8.games.Screens.StageGameScreen gameScreenStage;
+    private StageGameScreen gameScreenStage;
     public PlayerStats playerStats;
     //move
     private float speed = 128f;
     private String move;
     public static int destX, destY;
-    //public static boolean moving;
+    public static boolean Player_moving;
     //collision
     private TiledMapTileLayer collisionLayer;
     private boolean colision;
@@ -65,6 +65,7 @@ public class Player extends Character{
 
     @Override
     public void act(float delta) {
+        Player_moving = moving;
         move(delta);
     }
 

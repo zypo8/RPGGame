@@ -10,7 +10,7 @@ import com.zypo8.games.items.armor.helms.MithrilHelmet;
 import com.zypo8.games.items.armor.necks.EmeraldNeck;
 
 public class VendorWindow extends WindowWithTopRightCornerCloseButton {
-    private static Array<com.zypo8.games.items.InventorySlot> inventorySlots;
+    private Array<InventorySlot> inventorySlots;
     private Table table;
     public VendorWindow(String title, Skin skin) {
         super(title, skin);
@@ -88,7 +88,7 @@ public class VendorWindow extends WindowWithTopRightCornerCloseButton {
 
     }
 
-    public static void addItem(InventorySlot newInventorySlot){
+    public void addItem(InventorySlot newInventorySlot){
         for (int i = 0;i < inventorySlots.size;i++){
             if(inventorySlots.get(i).getItem() == null)
                 continue;

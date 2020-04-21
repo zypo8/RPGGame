@@ -53,7 +53,7 @@ public class Gatherable extends Interactable {
                 isBeingGathered = false;
                 setUpLoot();
             }
-            if(Player.moving){
+            if(Player.Player_moving){
                 isBeingGathered = false;
                 HUD.castBar.reset();
             }

@@ -30,7 +30,6 @@ public class StageGameScreen extends Stage {
     public boolean touchDown(int screenX, int screenY, int pointer, int button) {
         super.touchDown(screenX, screenY, pointer, button);
         coord = screenToStageCoordinates(new Vector2((float)screenX, (float)screenY));
-
         try {
             hitActor = (Interactable) hit(coord.x, coord.y, true);
         }
@@ -41,7 +40,7 @@ public class StageGameScreen extends Stage {
             return false;
         }
         if(hitActor != null) {
-            if (hitActor.getClass().getName().substring(0, 24).equals("com.zypo8.games.actors")) {
+            if (hitActor.getClass().getName().substring(0, 22).equals("com.zypo8.games.actors")) {
                 if (window != null)
                     window.remove();
                 Gdx.app.log("HIT", hitActor.getName());
